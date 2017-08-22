@@ -19,3 +19,8 @@ pip3 install --upgrade pip
 pip3 install jupyter
 ```
 Clone this repo and run the installation script: https://github.com/alexarchambault/jupyter-scala
+
+```
+git clone https://github.com/alexarchambault/jupyter-scala
+cd jupyter-scala && ./jupyter-scala
+```
