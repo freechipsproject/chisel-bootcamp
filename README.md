@@ -13,6 +13,10 @@ java -noverify -jar coursier launch   -r sonatype:releases -r sonatype:snapshots
 ```
 
 ## Jupyter Scala Mac/Linux Install
+Dependencies: openssh-client, openjdk-8-jre, openjdk-8-jdk (-headless OK for both),  ca-certificates-java
+
+Some examples in advanced chisel require verilator to be installed and [dsptools](https://github.com/ucb-bar/dsptools) to be `publish-local`'d
+
 First, use pip3 to install jupyter (or pip for python 2): http://jupyter.org/install.html
 ```
 pip3 install --upgrade pip
