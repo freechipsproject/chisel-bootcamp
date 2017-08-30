@@ -1,8 +1,6 @@
 # Generator bootcamp files
 
-Put jupyter files here.
-
-[Discussion document](https://docs.google.com/document/d/10CahcycM6Uk7cqgGHRcegrNueqCWZKNDxZdc1S36ZcE/view)
+Jupyter notebooks and supporting files for the UC Berkeley generator bootcamp (2017).
 
 ## Jupyter Scala Windows Install
 Download Coursier: https://git.io/vgvpD
@@ -29,3 +27,5 @@ Then, clone this repo and run the installation script: https://github.com/alexar
 git clone https://github.com/jupyter-scala/jupyter-scala.git
 cd jupyter-scala && ./jupyter-scala
 ```
+
+[Discussion document](https://docs.google.com/document/d/10CahcycM6Uk7cqgGHRcegrNueqCWZKNDxZdc1S36ZcE/view)
