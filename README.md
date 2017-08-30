@@ -28,4 +28,21 @@ git clone https://github.com/jupyter-scala/jupyter-scala.git
 cd jupyter-scala && ./jupyter-scala
 ```
 
+## Chamber Install
+
+Navigate to your work directory, likely `/projects/craft_flow/work/<username>/`. Then run the following commands. Note that `/proj/` is an alias to `/projects/`. If you are in bash, source `jupyter_sh` instead of `jupyter_csh`.
+
+```
+source /proj/craft_flow/tools/jupyter/jupyter_csh
+git clone /proj/craft_flow/source/chisel/generator-bootcamp
+cd generator-bootcamp
+jupyter notebook
+```
+
+## Misc
+
+[Question Submission Form](https://tinyurl.com/bootcampchisel)
+
+[Question Form Responses](https://docs.google.com/spreadsheets/d/1IjALLZFOoXxJbY1wcs5Zwpza8ksK0IHgdknq9hAr2lU/edit?usp=sharing)
+
 [Discussion document](https://docs.google.com/document/d/10CahcycM6Uk7cqgGHRcegrNueqCWZKNDxZdc1S36ZcE/view)
