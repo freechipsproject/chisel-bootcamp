@@ -1,8 +1,6 @@
 # Generator bootcamp files
 
-Put jupyter files here.
-
-[Discussion document](https://docs.google.com/document/d/10CahcycM6Uk7cqgGHRcegrNueqCWZKNDxZdc1S36ZcE/view)
+Jupyter notebooks and supporting files for the UC Berkeley generator bootcamp (2017).
 
 ## Jupyter Scala Windows Install
 Download Coursier: https://git.io/vgvpD
@@ -13,9 +11,38 @@ java -noverify -jar coursier launch   -r sonatype:releases -r sonatype:snapshots
 ```
 
 ## Jupyter Scala Mac/Linux Install
-Use pip3 to install jupyter (or pip for python 2): http://jupyter.org/install.html
+Dependencies: openssh-client, openjdk-8-jre, openjdk-8-jdk (-headless OK for both),  ca-certificates-java
+
+Some examples in advanced chisel require verilator to be installed and [dsptools](https://github.com/ucb-bar/dsptools) to be `publish-local`'d
+
+First, use pip3 to install jupyter (or pip for python 2): http://jupyter.org/install.html
 ```
 pip3 install --upgrade pip
 pip3 install jupyter
 ```
-Clone this repo and run the installation script: https://github.com/alexarchambault/jupyter-scala
+
+Then, clone this repo and run the installation script: https://github.com/alexarchambault/jupyter-scala
+
+```
+git clone https://github.com/jupyter-scala/jupyter-scala.git
+cd jupyter-scala && ./jupyter-scala
+```
+
+## Chamber Install
+
+Navigate to your work directory, likely `/projects/craft_flow/work/<username>/`. Then run the following commands. Note that `/proj/` is an alias to `/projects/`. If you are in bash, source `jupyter_sh` instead of `jupyter_csh`.
+
+```
+source /proj/craft_flow/tools/jupyter/jupyter_csh
+git clone /proj/craft_flow/source/chisel/generator-bootcamp
+cd generator-bootcamp
+jupyter notebook
+```
+
+## Misc
+
+[Question Submission Form](https://tinyurl.com/bootcampchisel)
+
+[Question Form Responses](https://docs.google.com/spreadsheets/d/1IjALLZFOoXxJbY1wcs5Zwpza8ksK0IHgdknq9hAr2lU/edit?usp=sharing)
+
+[Discussion document](https://docs.google.com/document/d/10CahcycM6Uk7cqgGHRcegrNueqCWZKNDxZdc1S36ZcE/view)
