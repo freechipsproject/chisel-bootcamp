@@ -1,3 +1,6 @@
 /.idea
 /.ipynb_checkpoints
 /test_run_dir
+*.anno
+*.fir
+*.v
