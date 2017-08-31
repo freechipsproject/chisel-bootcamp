@@ -3,6 +3,8 @@
 Jupyter notebooks and supporting files for the UC Berkeley generator bootcamp (2017).
 
 ## Jupyter Scala Windows Install
+Be sure java is installed (ideally java 8). If you type `java` into a command prompt and it says command not found, you need to install java.
+
 Download Coursier: https://git.io/vgvpD
 
 Go to download folder, where "coursier" (file) is
