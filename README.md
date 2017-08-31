@@ -39,7 +39,8 @@ cd generator-bootcamp
 jupyter notebook
 ```
 
-## Misc
+## Links
+[Bootcamp Agenda](https://tinyurl.com/bootcampchiselagenda)
 
 [Question Submission Form](https://tinyurl.com/bootcampchisel)
 
