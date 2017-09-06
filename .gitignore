@@ -4,3 +4,6 @@
 /.DS_Store
 /*/.DS_Store
 /*/*/.DS_Store
+*.anno
+*.fir
+*.v
