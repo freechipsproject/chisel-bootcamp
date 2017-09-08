@@ -49,3 +49,5 @@ jupyter notebook
 [Question Form Responses](https://docs.google.com/spreadsheets/d/1IjALLZFOoXxJbY1wcs5Zwpza8ksK0IHgdknq9hAr2lU/edit?usp=sharing)
 
 [Discussion document](https://docs.google.com/document/d/10CahcycM6Uk7cqgGHRcegrNueqCWZKNDxZdc1S36ZcE/view)
+
+[Feedback](https://docs.google.com/a/berkeley.edu/document/d/1mTWe8XoSYpLcVr5Rp9B4MWlZidrUQr-L35oxUPHHhag/edit?usp=sharing)
