@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.1 r15371" sodipodi:docname="counter2.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 128.6 103.6"
+	 style="enable-background:new 0 0 128.6 103.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{font-family:'Helvetica';}
+	.st4{font-size:14.0625px;}
+	.st5{font-family:'ArialMT';}
+	.st6{font-size:9px;}
+</style>
+<defs>
+	
+	
+		<inkscape:path-effect  apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect4668" is_visible="true" only_selected="false" steps="2" weight="33.333333">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect4664" is_visible="true" only_selected="false" steps="2" weight="33.333333">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect6952" is_visible="true" only_selected="false" steps="2" weight="33.333333">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect6948" is_visible="true" only_selected="false" steps="2" weight="33.333333">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect6926" is_visible="true" only_selected="false" steps="2" weight="33.333333">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect4493" is_visible="true" only_selected="false" steps="2" weight="33.333333">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_weight="true" apply_with_weight="true" effect="bspline" helper_size="0" id="path-effect6926-5" is_visible="true" only_selected="false" steps="2" weight="33.333333">
+		</inkscape:path-effect>
+</defs>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" fit-margin-bottom="1" fit-margin-left="1" fit-margin-right="1" fit-margin-top="1" id="base" inkscape:bbox-nodes="false" inkscape:current-layer="layer1" inkscape:cx="45.868076" inkscape:cy="38.207336" inkscape:document-units="mm" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:snap-bbox="true" inkscape:snap-bbox-edge-midpoints="true" inkscape:snap-bbox-midpoints="false" inkscape:window-height="1546" inkscape:window-maximized="1" inkscape:window-width="2560" inkscape:window-x="2400" inkscape:window-y="185" inkscape:zoom="4" pagecolor="#ffffff" showgrid="true">
+	<inkscape:grid  id="grid4485" originx="-13.5" originy="-3.5000045" type="xygrid"></inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(-13.5,-254.90768)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<path id="path4681" inkscape:connector-curvature="0" class="st0" d="M84.9,273v28.3H99"/>
+	<path id="path4683" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" class="st0" d="M99,329.6H73.5"/>
+	<path id="path4685" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccc" class="st0" d="M127.4,315.5h14.2V358H14v-85
+		h14.2"/>
+	
+		<path id="path4662" inkscape:connector-curvature="0" inkscape:original-d="m 30,262 c 6.666931,-2.6e-4 13.333597,-2.6e-4 19.999998,0" inkscape:path-effect="#path-effect4664" class="st0" d="
+		M56.5,273c18.9,0,37.8,0,56.7,0"/>
+	<rect id="rect4487" x="28.2" y="258.8" class="st1" width="28.3" height="56.7"/>
+	<path id="path4495" inkscape:connector-curvature="0" class="st2" d="M35.3,315.5l7.1-7.1l7.1,7.1"/>
+	<text transform="matrix(1 0 0 1 119.5224 277.3662)" class="st3 st4">out</text>
+	<g id="g4679" transform="translate(-4.999998,4.913916e-6)">
+		<path id="path4670" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccccc" class="st1" d="M104,287.1v24.8l7.1,3.5
+			L104,319v24.8l28.3-14.2v-28.3L104,287.1"/>
+		<text transform="matrix(1 0 0 1 117.6592 320.4345)" class="st5 st4">+</text>
+	</g>
+	<path id="path4687" inkscape:connector-curvature="0" class="st2" d="M77.8,265.9L63.6,280"/>
+	<text transform="matrix(1 0 0 1 62.5298 266.9754)" class="st5 st4">n</text>
+	<text transform="matrix(1 0 0 1 68.6929 270.1979)" class="st5 st6">1</text>
+	<text transform="matrix(1 0 0 1 80.7797 321.9299)" class="st5 st4">n</text>
+	<text transform="matrix(1 0 0 1 87.9428 325.1524)" class="st5 st6">2</text>
+	<text transform="matrix(1 0 0 1 60.8691 333.6631)" class="st5 st4">in</text>
+	<path id="path4687_1_" inkscape:connector-curvature="0" class="st2" d="M95,323.5l-14.2,14.2"/>
+</g>
+</svg>
