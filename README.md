@@ -2,6 +2,14 @@
 
 Jupyter notebooks and supporting files for the UC Berkeley generator bootcamp (2017).
 
+#### Written by Stevo Bailey, Adam Izraelivitz, Richard Lin, Chick Markley, Paul Rigge, Edward Wang
+[stevo@berkeley.edu](mailto:stevo@berkeley.edu),
+[azidar@berkeley.edu](mailto:azidar@berkeley.edu)
+[richard.lin@berkeley.edu](mailto:edwardw@berkeley.edu)
+[chick@berkeley.edu](mailto:chick@berkeley.edu),
+[rigge@berkeley.edu](mailto:rigge@berkeley.edu)
+[edwardw@berkeley.edu](mailto:edwardw@berkeley.edu)
+
 ## Jupyter Scala Windows Install
 Be sure java is installed (ideally java 8). If you type `java` into a command prompt and it says command not found, you need to install java.
 
