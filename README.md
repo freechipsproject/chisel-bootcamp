@@ -33,7 +33,7 @@ mkdir -p ~/.jupyter/custom
 cp source/custom.js ~/.jupyter/custom/custom.js
 ```
 
-### Windows Installation
+#### Windows Installation
 Be sure java is installed (ideally java 8). 
 If you type `java` into a command prompt and it says command not found, you need to install java.
 
@@ -56,7 +56,9 @@ Follow the instructions on their webiste: https://www.veripool.org/projects/veri
 
 If you don't know or don't have access to Cadence AWS, skip this section.
 
-Navigate to your working directory, which is probably your home directory. Then,
+Navigate to your working directory, which is probably your home directory. 
+Then run the following commands.
+The default shell is c-shell, but if you switch to bash, source `jupyter_sh` instead of `jupyter_csh`.
 ```
 source /craft/tools/jupyter/jupyter_csh
 git clone /proj/craft_flow/source/chisel/generator-bootcamp
@@ -71,7 +73,7 @@ Launch Firefox and set it as your default browser when it asks.
 ```
 
 Launch Jupyter.
-If it asks for a token, copy and paste the **to login with a token** URL seen in the terminal. 
+If it asks for a token, copy and paste the *to login with a token* URL seen in the terminal. 
 Future launches will be happy for a while.
 ```
 jupyter notebook
@@ -108,12 +110,12 @@ jupyter notebook
 ## Outline
 
 The bootcamp is divided into modules, which are further subdivided.
-This README serves as **Module 0**, an introduction and motivation to learning the material contained within.
-**Module 1** gives a quick introduction to Scala.
+This README serves as *Module 0*, an introduction and motivation to learning the material contained within.
+*Module 1* gives a quick introduction to Scala.
 It teaches you enough to start writing Chisel, but many more Scala concepts are taught along the way.
-Chisel is introduced in **Module 2**, starting with a hardware example and breaking it down.
-The rest of **Module 2** covers combinational and sequential logic, and software and hardware control flow.
-**Module 3** takes advantages of Scala's high-level programming language features to teach writing Chisel hardware generators.
+Chisel is introduced in *Module 2*, starting with a hardware example and breaking it down.
+The rest of *Module 2* covers combinational and sequential logic, and software and hardware control flow.
+*Module 3* takes advantages of Scala's high-level programming language features to teach writing Chisel hardware generators.
 By the end, you will be able to read and understand most of the [Chisel code base](https://github.com/freechipsproject/chisel3) and [Rocket Chip](https://github.com/freechipsproject/rocket-chip) code.
 It does not yet cover SBT, FIRRTL, Rocket Chip usage, or ChiselDSP.
 
