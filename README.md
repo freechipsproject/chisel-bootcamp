@@ -8,6 +8,7 @@ It teaches you Scala along the way, and it frames the learning of Chisel on the 
 
 First clone the repository.
 Then install the following dependencies.
+Note that we include a custom javascript file for Jupyter, so if you already have Jupyter installed, you still need to install the custom.js file.
 
 ### Jupyter Scala
 
