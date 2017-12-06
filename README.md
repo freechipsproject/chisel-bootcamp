@@ -60,9 +60,6 @@ Then run the following commands.
 The default shell is c-shell, but if you switch to bash, source `jupyter_sh` instead of `jupyter_csh`.
 ```
 source /craft/tools/jupyter/jupyter_csh
-git clone /proj/craft_flow/source/chisel/generator-bootcamp
-cd generator-bootcamp
-cp /craft/tools/jupyter/jupyter_support/rocket-dsp-utils-assembly-1.0.jar ../
 ```
 
 The default browser, Konqueror, won't work with Jupyter.
@@ -77,6 +74,7 @@ Future launches will be happy for a while.
 ```
 git clone /craft/tools/chisel/generator-bootcamp.git
 cd generator-bootcamp
+cp /craft/tools/jupyter/jupyter_support/rocket-dsp-utils-assembly-1.0.jar ../
 jupyter notebook
 ```
 
