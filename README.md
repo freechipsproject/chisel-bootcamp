@@ -71,10 +71,12 @@ Launch Firefox and set it as your default browser when it asks.
 /craft/cdns_sw_inst/firefox/45.3.0esr/firefox
 ```
 
-Launch Jupyter.
+Clone the repo and launch Jupyter.
 If it asks for a token, copy and paste the *to login with a token* URL seen in the terminal. 
 Future launches will be happy for a while.
 ```
+git clone /craft/tools/chisel/generator-bootcamp.git
+cd generator-bootcamp
 jupyter notebook
 ```
 
