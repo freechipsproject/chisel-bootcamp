@@ -4,15 +4,15 @@ Elevate the level of your hardware design from instances to generators!
 This bootcamp teaches you Chisel, a Berkeley hardware construction DSL written in Scala.
 It teaches you Scala along the way, and it frames the learning of Chisel on the idea of *hardware generators*.
 
-## Installation Instructions
+## Setup Instructions
 
-First clone the repository.
-Then install the following dependencies.
+Run the instructions below for your particular situation.
 Note that we include a custom javascript file for Jupyter, so if you already have Jupyter installed, you still need to install the custom.js file.
 
-### Jupyter Scala
+### Local Installation - Mac/Linux
 
-#### Mac/Linux Installation
+First install Jupyter Scala.
+
 Dependencies: openssh-client, openjdk-8-jre, openjdk-8-jdk (-headless OK for both),  ca-certificates-java
 
 First, use pip3 to install jupyter (or pip for python 2): http://jupyter.org/install.html
@@ -27,14 +27,16 @@ git clone https://github.com/jupyter-scala/jupyter-scala.git
 cd jupyter-scala && ./jupyter-scala
 ```
 
-Install the customization script.
+Now clone this repo and install the customization script.
 If you already have one, append this script to it.
 ```
+git clone https://github.com/ucb-bar/generator-bootcamp.git
 mkdir -p ~/.jupyter/custom
 cp source/custom.js ~/.jupyter/custom/custom.js
 ```
 
-#### Windows Installation
+### Local Installation - Windows 
+
 Be sure java is installed (ideally java 8). 
 If you type `java` into a command prompt and it says command not found, you need to install java.
 
@@ -45,13 +47,9 @@ Go to download folder, where "coursier" (file) is
 java -noverify -jar coursier launch -r sonatype:releases -r sonatype:snapshots -i ammonite -I ammonite:org.jupyter-scala:ammonite-runtime_2.11.11:0.8.3-1 -I ammonite:org.jupyter-scala:scala-api_2.11.11:0.4.2 org.jupyter-scala:scala-cli_2.11.11:0.4.2 -- --id scala --name "Scala"
 ```
 
-Install the customization script by moving `source/custom.js` to `~/.jupyter/custom/custom.js`.
-If you already have one, append this script to it.
-
-### Verilator (Optional)
-
-Verilator is a free, open-source Verilog simulator supported by the Chisel testers.
-Follow the instructions on their webiste: https://www.veripool.org/projects/verilator/wiki/Installing
+Download this repository as a zip file (or use a Windows git client) and unpack it.
+Install the customization script by moving `generator-bootcamp/source/custom.js` to `~/.jupyter/custom/custom.js`.
+If you already have a custom.js file, append this script to it.
 
 ### Cadence AWS Setup
 
