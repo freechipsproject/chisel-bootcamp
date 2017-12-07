@@ -144,7 +144,7 @@ Learning to write generators is difficult, but we hope this tutorial will pave t
 
 ## Contributors
 - Stevo Bailey ([stevo@berkeley.edu](mailto:stevo@berkeley.edu))
-- Adam Izraelivitz ([azidar@berkeley.edu](mailto:azidar@berkeley.edu))
+- Adam Izraelevitz ([adamiz@berkeley.edu](mailto:azidar@berkeley.edu))
 - Richard Lin ([richard.lin@berkeley.edu](mailto:edwardw@berkeley.edu))
 - Chick Markley ([chick@berkeley.edu](mailto:chick@berkeley.edu))
 - Paul Rigge([rigge@berkeley.edu](mailto:rigge@berkeley.edu))
