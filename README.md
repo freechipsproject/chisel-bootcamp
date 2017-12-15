@@ -79,9 +79,16 @@ Now clone this repo and install the customization script.
 If you already have one, append this script to it.
 ```
 git clone https://github.com/ucb-bar/generator-bootcamp.git
+cd generator-bootcamp
 mkdir -p ~/.jupyter/custom
 cp source/custom.js ~/.jupyter/custom/custom.js
 ```
+
+And to start the bootcamp on your local machine:
+```
+jupyter notebook
+```
+
 
 ### Local Installation - Windows 
 
