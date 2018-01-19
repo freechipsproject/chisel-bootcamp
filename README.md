@@ -38,7 +38,7 @@ If we can't write a Verilog generator, we need to write a new instance, thus dou
 As a better option, we should write one program that generates both hardware instances, which would reduce our code size and make tedious things easier. 
 These programs are called generators.
 
-Ideally, we want our generators to be (1) composable, (2) powerful, and (3) enable fine-grain control over the generated design.
+Ideally, we want our generators to be (1) composable, (2) powerful, and (3) enable fine-grained control over the generated design.
 Error checking is necessary to make sure a composition is legal; without it, debugging is difficult.
 This requires a generator language to understand the semantics of the design (to know what’s legal and what’s not).
 Also, the generator should not be overly verbose! 
@@ -48,8 +48,8 @@ Hardware design performance is very sensitive to small changes, and because of t
 Generators are very different than high-level-synthesis (HLS).
 
 The benefits of Chisel are in how you use it, not in the language itself. 
-If you decide to write instances instead of generators, you will not see any advantages of Chisel over Verilog. 
-But, if you take the time to learn how to write generators, then the power of Chisel will become apparent and you will realize you can never go back to writing Verilog.
+If you decide to write instances instead of generators, you will see fewer advantages of Chisel over Verilog. 
+But if you take the time to learn how to write generators, then the power of Chisel will become apparent and you will realize you can never go back to writing Verilog.
 Learning to write generators is difficult, but we hope this tutorial will pave the way for you to become a better hardware designer, programmer, and thinker!
 
 ## Setup Instructions
