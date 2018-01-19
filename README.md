@@ -35,20 +35,20 @@ However, writing instances is tedious.
 Why make the same mistakes writing a slightly modified version of something somebody else has likely already designed?
 Verilog supports limited parameterization, such as bitwidths and generate statements, but this only gets you so far.
 If we can't write a Verilog generator, we need to write a new instance, thus doubling our code size.
-As a better option, we should write one program that generates both hardware instances, which would reduce our code size and make tedious things easier. 
+As a better option, we should write one program that generates both hardware instances, which would reduce our code size and make tedious things easier.
 These programs are called generators.
 
 Ideally, we want our generators to be (1) composable, (2) powerful, and (3) enable fine-grained control over the generated design.
 Error checking is necessary to make sure a composition is legal; without it, debugging is difficult.
 This requires a generator language to understand the semantics of the design (to know what’s legal and what’s not).
-Also, the generator should not be overly verbose! 
+Also, the generator should not be overly verbose!
 We want the generator program to concisely express many different designs, without rewriting it in if statements for each instance.
-Finally, it should be a zero-cost abstraction. 
+Finally, it should be a zero-cost abstraction.
 Hardware design performance is very sensitive to small changes, and because of that, you need to be able to exactly specify the microarchitecture.
 Generators are very different than high-level-synthesis (HLS).
 
-The benefits of Chisel are in how you use it, not in the language itself. 
-If you decide to write instances instead of generators, you will see fewer advantages of Chisel over Verilog. 
+The benefits of Chisel are in how you use it, not in the language itself.
+If you decide to write instances instead of generators, you will see fewer advantages of Chisel over Verilog.
 But if you take the time to learn how to write generators, then the power of Chisel will become apparent and you will realize you can never go back to writing Verilog.
 Learning to write generators is difficult, but we hope this tutorial will pave the way for you to become a better hardware designer, programmer, and thinker!
 
@@ -90,9 +90,9 @@ jupyter notebook
 ```
 
 
-### Local Installation - Windows 
+### Local Installation - Windows
 
-Be sure java is installed (ideally java 8). 
+Be sure java is installed (ideally java 8).
 If you type `java` into a command prompt and it says command not found, you need to install java.
 
 Download Coursier: https://git.io/vgvpD
@@ -110,7 +110,7 @@ If you already have a custom.js file, append this script to it.
 
 If you don't know or don't have access to Cadence AWS, skip this section.
 
-Navigate to your working directory, which is probably your home directory. 
+Navigate to your working directory, which is probably your home directory.
 Then run the following commands.
 The default shell is c-shell, but if you switch to bash, source `jupyter_sh` instead of `jupyter_csh`.
 ```
@@ -124,7 +124,7 @@ Launch Firefox and set it as your default browser when it asks.
 ```
 
 Clone the repo and launch Jupyter.
-If it asks for a token, copy and paste the *to login with a token* URL seen in the terminal. 
+If it asks for a token, copy and paste the *to login with a token* URL seen in the terminal.
 Future launches will be happy for a while.
 ```
 git clone /craft/tools/chisel/generator-bootcamp.git
@@ -136,9 +136,9 @@ jupyter notebook
 ### Cadence Chamber Setup
 
 If you don't know what the Cadence Chamber is, skip this section.
-Navigate to your work directory, likely `/projects/craft_flow/work/<username>/`. 
-Then run the following commands. 
-Note that `/proj/` is an alias to `/projects/`. 
+Navigate to your work directory, likely `/projects/craft_flow/work/<username>/`.
+Then run the following commands.
+Note that `/proj/` is an alias to `/projects/`.
 If you are in bash, source `jupyter_sh` instead of `jupyter_csh`.
 
 ```
