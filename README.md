@@ -57,6 +57,13 @@ Learning to write generators is difficult, but we hope this tutorial will pave t
 Run the instructions below for your particular situation.
 Note that we include a custom javascript file for Jupyter, so if you already have Jupyter installed, you still need to install the custom.js file.
 
+Note: Make sure you are using **Java 8** (NOT Java 9) and have the JDK8 installed. Coursier/jupyter-scala does not appear to be compatible with Java 9 yet as of January 2018.
+
+If you do have multiple version of Java, make sure to select Java 8 (1.8) before running `jupyter notebook`:
+
+* On Windows: https://gist.github.com/rwunsch/d157d5fe09e9f7cdc858cec58c8462d6
+* On Mac OS: https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-os-x
+
 ### Local Installation - Mac/Linux
 
 First install Jupyter Scala.
@@ -147,6 +154,30 @@ git clone /proj/craft_flow/source/chisel/generator-bootcamp
 cd generator-bootcamp
 jupyter notebook
 ```
+
+## FAQ
+
+### Kernel Crashes Upon Startup
+
+I get the following error upon launching a Scala notebook and Jupyter says that the kernel has crashed:
+
+```
+Exception in thread "main" java.lang.RuntimeException: java.lang.NullPointerException
+	at jupyter.kernel.server.ServerApp$.apply(ServerApp.scala:174)
+	at jupyter.scala.JupyterScalaApp.delayedEndpoint$jupyter$scala$JupyterScalaApp$1(JupyterScala.scala:93)
+	at jupyter.scala.JupyterScalaApp$delayedInit$body.apply(JupyterScala.scala:13)
+  ...
+
+Caused by: java.lang.NullPointerException
+	at ammonite.runtime.Classpath$.classpath(Classpath.scala:31)
+	at ammonite.interp.Interpreter.init(Interpreter.scala:93)
+	at ammonite.interp.Interpreter.processModule(Interpreter.scala:409)
+	at ammonite.interp.Interpreter$$anonfun$10.apply(Interpreter.scala:151)
+	at ammonite.interp.Interpreter$$anonfun$10.apply(Interpreter.scala:148)
+  ...
+```
+
+Make sure that you have **Java 8** selected for running Jupyter (see the instructions above).
 
 ## Contributors
 - Stevo Bailey ([stevo@berkeley.edu](mailto:stevo@berkeley.edu))
