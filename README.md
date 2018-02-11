@@ -6,7 +6,11 @@ It teaches you Scala along the way, and it frames the learning of Chisel on the 
 
 ## Installation Instructions
 
-First clone the repository.
+First clone this repository.
+```
+git clone https://github.com/ucb-bar/generator-bootcamp.git
+```
+
 Then install the following dependencies.
 Note that we include a custom javascript file for Jupyter, so if you already have Jupyter installed, you still need to install the custom.js file.
 
