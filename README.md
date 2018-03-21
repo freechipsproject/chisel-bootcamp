@@ -124,7 +124,7 @@ Near the end of the Jupyter installation is a question about whether to add Jupy
 Windows does not recommend this, but I do.  It will make it easier to run using the command prompt.
  
 #### Install Scala components.
-The simplest way seens to be to Download [Coursier from https://git.io/vgvpD](https://git.io/vgvpD)
+The simplest way seens to be to Download Coursier from [https://git.io/vgvpD](https://git.io/vgvpD)
 
 Go to download folder, where "coursier" (file) is
 ```
