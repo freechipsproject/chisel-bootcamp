@@ -99,19 +99,64 @@ jupyter notebook
 
 ### Local Installation - Windows
 
-Be sure java is installed (ideally java 8).
-If you type `java` into a command prompt and it says command not found, you need to install java.
+These notes describe, in general, the way to install the Generator Bootcamp under Windows 10.
+Many different windows configurations may be encountered and some changes may be required.
+Please let us know of there are things out of date, or otherwise should be covered here.
 
-Download Coursier: https://git.io/vgvpD
+>There are several times where you may want to launch a Command (shell) window.
+I have discovered that launching the command window in Administrator Mode is helpful. 
+To do that from the bottom left Launcher, find or search for 'CMD' when selecting it from
+the menu, right click and choose, "Launch in Administrator Mode".
+Find more details on this [here](http://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator)
+and other places.
+It is also best to relauch
+command windows between steps in the process so that newly installed software will be recognized.
+
+#### Be sure java is installed (ideally java 8).
+If you type `java` into a command prompt and it says command not found, you need to install
+[Java](https://java.com/en/download/help/windows_manual_download.xml).
+
+#### Install Jupyter
+Jupyter recommends using the Anaconda distribution, here is the 
+[Windows download](https://www.anaconda.com/download/#windows).
+
+Near the end of the Jupyter installation is a question about whether to add Jupyter to the PATH.
+Windows does not recommend this, but I do.  It will make it easier to run using the command prompt.
+ 
+#### Install Scala components.
+The simplest way seens to be to Download Coursier from [https://git.io/vgvpD](https://git.io/vgvpD)
 
 Go to download folder, where "coursier" (file) is
 ```
 java -noverify -jar coursier launch -r sonatype:releases -r sonatype:snapshots -i ammonite -I ammonite:org.jupyter-scala:ammonite-runtime_2.11.11:0.8.3-1 -I ammonite:org.jupyter-scala:scala-api_2.11.11:0.4.2 org.jupyter-scala:scala-cli_2.11.11:0.4.2 -- --id scala --name "Scala"
 ```
 
-Download this repository as a zip file (or use a Windows git client) and unpack it.
-Install the customization script by moving `generator-bootcamp/source/custom.js` to `~/.jupyter/custom/custom.js`.
+#### Install the generator-bootcamp repo.
+Download the [generator-bootcamp](https://github.com/ucb-bar/generator-bootcamp) as a zip file (or use a Windows git client)
+and unpack it.
+I copied it to my c:\Users\me\generator-bootcamp.
+There may be better ways and more standard conventions on where to put this kind of thing.
+But the most important thing is that you need to know where it is.
+
+Install the customization script by moving `generator-bootcamp/source/custom.js` to 
+`%HOMEDRIVE%%HOMEPATH%\.jupyter\custom\custom.js`.
 If you already have a custom.js file, append this script to it.
+
+#### Launch the Jupyter and the bootcamp
+In the directory containing the unpacked generator-bootcamp repo, from a new command window type:
+```bash
+jupyter notebook
+```
+This should start the bootcamp server and open a top page bootcamp menu in your default browser.  If it does not
+look for the something like the following in the command window and copy and paste the link you see into
+a browser window.
+```bash
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=9c503729c379fcb3c7a17087f05462c733c1733eb8b31d07
+``` 
+
+Good Luck!
 
 ### Cadence AWS Setup
 
