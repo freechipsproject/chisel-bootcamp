@@ -3,7 +3,7 @@ import $ivy.`edu.berkeley.cs::chisel-iotesters:1.2.0`
 import $ivy.`edu.berkeley.cs::dsptools:1.1.0`
 import $ivy.`org.scalanlp::breeze:0.13.2`
 
-
+import firrtl.ir._
 
 // Convenience function to invoke Chisel and grab emitted Verilog.
 def getVerilog(dut: => chisel3.core.UserModule): String = {
@@ -54,3 +54,26 @@ def compileFirrtl(
   val outputString = outputBuffer.toString
   outputString
 }
+
+def stringifyAST(firrtlAST: Circuit): String = {
+  var ntabs = 0
+  val buf = new StringBuilder
+  val string = firrtlAST.toString
+  string.zipWithIndex.foreach { case (c, idx) =>
+    c match {
+      case ' ' =>
+      case '(' =>
+        ntabs += 1
+        buf ++= "(\n" + "| " * ntabs
+      case ')' =>
+        ntabs -= 1
+        buf ++= "\n" + "| " * ntabs + ")"
+      case ','=> buf ++= ",\n" + "| " * ntabs
+      case  c if idx > 0 && string(idx-1)==')' =>
+        buf ++= "\n" + "| " * ntabs + c
+      case c => buf += c
+    }
+  }
+  buf.toString
+}
+
