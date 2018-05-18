@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1"
 	 id="svg8" inkscape:version="0.92.1 r15371" sodipodi:docname="shifter4.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 279.7 92.9"
-	 style="enable-background:new 0 0 279.7 92.9;" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 320 93"
+	 style="enable-background:new 0 0 320 93;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;}
 	.st1{font-family:'Helvetica';}
@@ -33,26 +33,29 @@
 	<inkscape:grid  id="grid4485" originx="-7.8689227" originy="-18.747474" type="xygrid"></inkscape:grid>
 </sodipodi:namedview>
 <g id="layer1" transform="translate(-7.8689232,-243.78842)" inkscape:groupmode="layer" inkscape:label="Layer 1">
-	<rect id="rect4487-0" x="50.1" y="279.8" class="st0" width="28.3" height="56.7"/>
-	<rect id="rect4487-7" x="106.8" y="279.8" class="st0" width="28.3" height="56.7"/>
-	<rect id="rect4487-0-1" x="163.5" y="279.8" class="st0" width="28.3" height="56.7"/>
-	<path id="path4495-2-3" inkscape:connector-curvature="0" class="st0" d="M170.6,336.5l7.1-7.1l7.1,7.1"/>
-	<text transform="matrix(1 0 0 1 82.6023 270.7459)" class="st1 st2">1</text>
-	<text transform="matrix(1 0 0 1 139.4051 270.8397)" class="st1 st2">2</text>
-	<text transform="matrix(1 0 0 1 195.8172 270.7401)" class="st1 st2">3</text>
-	<text transform="matrix(1 0 0 1 25.5457 270.7401)" class="st1 st2">0</text>
-	<path id="path6916" inkscape:connector-curvature="0" class="st3" d="M21.8,294h28.3"/>
-	<path id="path6918" inkscape:connector-curvature="0" class="st3" d="M78.5,294h28.3"/>
-	<path id="path6920" inkscape:connector-curvature="0" class="st3" d="M135.2,294h28.3"/>
-	<path id="path6964" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st4" d="M36,251.4h184.3h14.2"/>
-	<path id="path6966" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st0" d="M36,294v-35.4l7.1-7.1"/>
-	<text transform="matrix(1 0 0 1 240.7049 255.8631)" class="st1 st2">out[3:0]</text>
-	<path id="path6920-1" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" class="st3" d="M191.9,294H206"/>
-	<text transform="matrix(1 0 0 1 7.869 299.3084)" class="st1 st2">in</text>
-	<path id="path4495-2-3-4" inkscape:connector-curvature="0" class="st0" d="M113.9,336.5l7.1-7.1l7.1,7.1"/>
-	<path id="path4495-2-3-4-5" inkscape:connector-curvature="0" class="st0" d="M57.2,336.5l7.1-7.1l7.1,7.1"/>
-	<path id="path6966-7" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st0" d="M92.7,294v-35.4l7.1-7.1"/>
-	<path id="path6966-7-7" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st0" d="M149.4,294v-35.4l7.1-7.1"/>
-	<path id="path6966-7-7-3" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st0" d="M206,294v-35.4l7.1-7.1"/>
+	<rect id="rect4487-0" x="90.3" y="279.8" class="st0" width="28.3" height="56.7"/>
+	<rect id="rect4487-7" x="147" y="279.8" class="st0" width="28.3" height="56.7"/>
+	<rect id="rect4487-0-1" x="203.7" y="279.8" class="st0" width="28.3" height="56.7"/>
+	<path id="path4495-2-3" inkscape:connector-curvature="0" class="st0" d="M210.8,336.5l7.1-7.1l7.1,7.1"/>
+	<text transform="matrix(1 0 0 1 122.8513 270.7455)" class="st1 st2">1</text>
+	<text transform="matrix(1 0 0 1 179.6541 270.8392)" class="st1 st2">2</text>
+	<text transform="matrix(1 0 0 1 236.0662 270.7396)" class="st1 st2">3</text>
+	<text transform="matrix(1 0 0 1 65.7947 270.7396)" class="st1 st2">0</text>
+	<path id="path6916" inkscape:connector-curvature="0" class="st3" d="M62,294h28.3"/>
+	<path id="path6918" inkscape:connector-curvature="0" class="st3" d="M118.7,294H147"/>
+	<path id="path6920" inkscape:connector-curvature="0" class="st3" d="M175.4,294h28.3"/>
+	<path id="path6964" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st4" d="M76.2,251.4h184.3h14.2"/>
+	<path id="path6966" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st0" d="M76.2,294v-35.4l7.1-7.1"/>
+	<text transform="matrix(1 0 0 1 280.9539 255.8626)" class="st1 st2">out[3:0]</text>
+	<path id="path6920-1" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" class="st3" d="M232.1,294h14.1"/>
+	<text transform="matrix(1 0 0 1 7.869 297.308)" class="st1 st2">in</text>
+	<path id="path4495-2-3-4" inkscape:connector-curvature="0" class="st0" d="M154.1,336.5l7.1-7.1l7.1,7.1"/>
+	<path id="path4495-2-3-4-5" inkscape:connector-curvature="0" class="st0" d="M97.4,336.5l7.1-7.1l7.1,7.1"/>
+	<path id="path6966-7" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st0" d="M132.9,294v-35.4l7.1-7.1"/>
+	<path id="path6966-7-7" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st0" d="M189.6,294v-35.4l7.1-7.1"/>
+	<path id="path6966-7-7-3" inkscape:connector-curvature="0" sodipodi:nodetypes="ccc" class="st0" d="M246.2,294v-35.4l7.1-7.1"/>
+	<rect id="rect4487-0_1_" x="33.7" y="279.8" class="st0" width="28.3" height="56.7"/>
+	<path id="path4495-2-3-4-5_1_" inkscape:connector-curvature="0" class="st0" d="M40.8,336.5l7.1-7.1l7.1,7.1"/>
+	<path id="path6916_1_" inkscape:connector-curvature="0" class="st3" d="M19.6,294h14.1"/>
 </g>
 </svg>
