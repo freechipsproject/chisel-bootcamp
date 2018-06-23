@@ -13,9 +13,9 @@ It teaches you Scala along the way, and it frames the learning of Chisel on the 
 
 ## Prerequisites
 
-- familiarity with Verilog, VHDL, or at the very least, hardware design in general
-- programming experience in a modern language, be it in Python, Java, C++, etc.
-- an earnest desire to learn something new
+- Familiarity with Verilog, VHDL, or at the very least, hardware design in general
+- Programming experience in a modern language, be it in Python, Java, C++, etc.
+- An earnest desire to learn something new
 
 ## Outline
 
@@ -73,7 +73,7 @@ Dependencies: openssh-client, openjdk-8-jre, openjdk-8-jdk (-headless OK for bot
 First, use pip3 to install jupyter (or pip for python 2): http://jupyter.org/install.html
 ```
 pip3 install --upgrade pip
-pip3 install jupyter
+pip3 install jupyter --no-deps --ignore-installed
 ```
 
 Then, clone this repo and run the installation script: https://github.com/alexarchambault/jupyter-scala
