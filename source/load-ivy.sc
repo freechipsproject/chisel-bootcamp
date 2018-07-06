@@ -1,6 +1,6 @@
-import $ivy.`edu.berkeley.cs::chisel3:3.0.0` 
-import $ivy.`edu.berkeley.cs::chisel-iotesters:1.1.0`
-import $ivy.`edu.berkeley.cs::dsptools:1.0.0`
+import $ivy.`edu.berkeley.cs::chisel3:3.1.1`
+import $ivy.`edu.berkeley.cs::chisel-iotesters:1.2.1`
+import $ivy.`edu.berkeley.cs::dsptools:1.1.1`
 import $ivy.`org.scalanlp::breeze:0.13.2`
 
 // Convenience function to invoke Chisel and grab emitted Verilog.
