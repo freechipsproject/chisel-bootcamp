@@ -27,7 +27,7 @@ Chisel is introduced in *Module 2*, starting with a hardware example and breakin
 The rest of *Module 2* covers combinational and sequential logic, and software and hardware control flow.
 *Module 3* takes advantages of Scala's high-level programming language features to teach writing Chisel hardware generators.
 By the end, you will be able to read and understand most of the [Chisel code base](https://github.com/freechipsproject/chisel3) and [Rocket Chip](https://github.com/freechipsproject/rocket-chip) code.
-It does not yet cover SBT, FIRRTL, Rocket Chip usage, or ChiselDSP.
+It does not yet cover SBT, Rocket Chip usage, or ChiselDSP.
 
 ## Motivation
 All hardware description languages support writing single instances.
@@ -73,8 +73,12 @@ Dependencies: openssh-client, openjdk-8-jre, openjdk-8-jdk (-headless OK for bot
 First, use pip3 to install jupyter (or pip for python 2): http://jupyter.org/install.html
 ```
 pip3 install --upgrade pip
-pip3 install jupyter --no-deps --ignore-installed
+pip3 install jupyter --ignore-installed
 ```
+
+If pip3 isn't working out of the box (possibly because your Python3 version is out of date), you can try `python3 -m pip` in lieu of `pip3`.
+
+(To reinstall jupyter later for whatever reason, you can use `--no-deps` to avoid re-installing all the dependencies.)
 
 Then, clone this repo and run the installation script: https://github.com/alexarchambault/jupyter-scala
 ```
