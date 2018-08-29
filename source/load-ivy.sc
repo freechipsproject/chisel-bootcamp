@@ -20,7 +20,7 @@ def getFirrtl(dut: => chisel3.core.UserModule): String = {
   return chisel3.Driver.emit({() => dut})
 }
 
-def compileFirrtl(
+def compileFIRRTL(
     inputFirrtl: String,
     compiler: firrtl.Compiler,
     customTransforms: Seq[firrtl.Transform] = Seq.empty,
