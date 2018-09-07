@@ -167,6 +167,11 @@ Good Luck!
 If you don't know or don't have access to Cadence AWS, skip this section.
 
 Navigate to your working directory, which is probably your home directory.
+
+```
+cd ~
+```
+
 Then run the following commands.
 The default shell is c-shell, but if you switch to bash, source `jupyter_sh` instead of `jupyter_csh`.
 ```
