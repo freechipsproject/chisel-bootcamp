@@ -179,9 +179,9 @@ source /craft/tools/jupyter/jupyter_csh
 ```
 
 The default browser, Konqueror, won't work with Jupyter.
-Launch Firefox and set it as your default browser when it asks.
+Launch Firefox in the background and set it as your default browser when it asks.
 ```
-/craft/cdns_sw_inst/firefox/45.3.0esr/firefox
+/craft/cdns_sw_inst/firefox/45.3.0esr/firefox &
 ```
 
 Clone the repo and launch Jupyter.
