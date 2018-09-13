@@ -1,4 +1,4 @@
-# Generator Bootcamp
+# Chisel Bootcamp
 
 Elevate the level of your hardware design from instances to generators!
 This bootcamp teaches you Chisel, a Berkeley hardware construction DSL written in Scala.
@@ -89,8 +89,8 @@ cd jupyter-scala && ./jupyter-scala
 Now clone this repo and install the customization script.
 If you already have one, append this script to it.
 ```
-git clone https://github.com/ucb-bar/generator-bootcamp.git
-cd generator-bootcamp
+git clone https://github.com/freechipsproject/chisel-bootcamp.git
+cd chisel-bootcamp
 mkdir -p ~/.jupyter/custom
 cp source/custom.js ~/.jupyter/custom/custom.js
 ```
@@ -135,19 +135,19 @@ Go to download folder, where "coursier" (file) is
 java -noverify -jar coursier launch -r sonatype:releases -r sonatype:snapshots -i ammonite -I ammonite:org.jupyter-scala:ammonite-runtime_2.11.11:0.8.3-1 -I ammonite:org.jupyter-scala:scala-api_2.11.11:0.4.2 org.jupyter-scala:scala-cli_2.11.11:0.4.2 -- --id scala --name "Scala"
 ```
 
-#### Install the generator-bootcamp repo.
-Download the [generator-bootcamp](https://github.com/ucb-bar/generator-bootcamp) as a zip file (or use a Windows git client)
+#### Install the chisel-bootcamp repo.
+Download the [chisel-bootcamp](https://github.com/freechipsproject/chisel-bootcamp) as a zip file (or use a Windows git client)
 and unpack it.
-I copied it to my c:\Users\me\generator-bootcamp.
+I copied it to my c:\Users\me\chisel-bootcamp.
 There may be better ways and more standard conventions on where to put this kind of thing.
 But the most important thing is that you need to know where it is.
 
-Install the customization script by moving `generator-bootcamp/source/custom.js` to 
+Install the customization script by moving `chisel-bootcamp/source/custom.js` to 
 `%HOMEDRIVE%%HOMEPATH%\.jupyter\custom\custom.js`.
 If you already have a custom.js file, append this script to it.
 
 #### Launch the Jupyter and the bootcamp
-In the directory containing the unpacked generator-bootcamp repo, from a new command window type:
+In the directory containing the unpacked chisel-bootcamp repo, from a new command window type:
 ```bash
 jupyter notebook
 ```
