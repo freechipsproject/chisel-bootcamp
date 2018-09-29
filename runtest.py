@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
 import os
+import sys
 import subprocess
 import tempfile
+
+from typing import List
 
 import nbformat
 
@@ -63,7 +66,17 @@ notebooks = {
 }
 
 if __name__ == "__main__":
-    for n in sorted(notebooks):
+    notebooks_to_run = []  # type: List[str]
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "--help":
+            print("Usage: {} [notebook_name.ipynb] [notebook_name_2.ipynb] [...]".format(sys.argv[0]))
+            print("By default, check all notebooks if notebooks are not specified.")
+            sys.exit(0)
+        else:
+            notebooks_to_run = sys.argv[1:]
+    else:
+        notebooks_to_run = sorted(notebooks)  # all notebooks
+    for n in notebooks_to_run:
         expected = notebooks[n]
         nb, errors = _notebook_run(n)
         check_errors(expected, errors)
