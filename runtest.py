@@ -33,12 +33,10 @@ def _notebook_run(path):
     return nb, errors
 
 def check_errors(expected, actual):
-    print(len(expected))
-    print(len(actual))
     assert len(expected) == len(actual)
     for e, a in zip(expected, actual):
-        print(a['traceback'])
-        print('\n\n')
+        # print(a['traceback'])
+        # print('\n\n')
         assert e in a['traceback'][0]
 
 notebooks = {
@@ -54,11 +52,11 @@ notebooks = {
     "3.2_collections.ipynb": ['Internal Error!'],
     "3.2_interlude.ipynb": [],
     "3.3_higher-order_functions.ipynb": ['scala.NotImplementedError'] +
-      ['java.lang.UnsupportedOperationException'] + ['scala.NotImplementedError'],
+      ['java.lang.UnsupportedOperationException'] + ['scala.NotImplementedError'] * 3,
     "3.4_functional_programming.ipynb": ['scala.NotImplementedError'] +
-      ['Compilation Failed!'] + ['scala.NotImplementedError'] * 2,
+      ['Compilation Failed'] + ['scala.NotImplementedError'] + ['Compilation Failed'],
     "3.5_object_oriented_programming.ipynb": ['Compilation Failed'],
-    "3.6_types.ipynb": ['chisel3.internal.ChiselException'] + ['scala.NotImplementedError'] * 8,
+    "3.6_types.ipynb": ['chisel3.internal.ChiselException'] + ['I give up!'] + ['SyntaxError'] + ['Compilation Failed'] * 6,
     "4.1_firrtl_ast.ipynb": [],
     "4.2_firrtl_ast_traversal.ipynb": [],
     "4.3_firrtl_common_idioms.ipynb": [],
