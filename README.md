@@ -80,19 +80,27 @@ If pip3 isn't working out of the box (possibly because your Python3 version is o
 
 (To reinstall jupyter later for whatever reason, you can use `--no-deps` to avoid re-installing all the dependencies.)
 
-Then, clone this repo and run the installation script: https://github.com/alexarchambault/jupyter-scala
+Then, clone this repo and run the installation script: https://github.com/almond-sh/almond.git
 ```
-git clone https://github.com/jupyter-scala/jupyter-scala.git
-cd jupyter-scala && ./jupyter-scala
+git clone https://github.com/almond-sh/almond.git
+cd jupyter-scala
+curl -L -o coursier https://git.io/coursier && chmod +x coursier
+SCALA_VERSION=2.12.7 ALMOND_VERSION=0.1.9
 ```
 
 Now clone this repo and install the customization script.
 If you already have one, append this script to it.
+
 ```
 git clone https://github.com/freechipsproject/chisel-bootcamp.git
 cd chisel-bootcamp
 mkdir -p ~/.jupyter/custom
 cp source/custom.js ~/.jupyter/custom/custom.js
+coursier bootstrap \
+    -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
+    sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
+    -o almond
+./almond --install
 ```
 
 And to start the bootcamp on your local machine:
@@ -126,7 +134,7 @@ Jupyter recommends using the Anaconda distribution, here is the
 
 Near the end of the Jupyter installation is a question about whether to add Jupyter to the PATH.
 Windows does not recommend this, but I do.  It will make it easier to run using the command prompt.
- 
+
 #### Install Scala components.
 The simplest way seens to be to Download Coursier from [https://git.io/vgvpD](https://git.io/vgvpD)
 
@@ -158,7 +166,7 @@ a browser window.
     Copy/paste this URL into your browser when you connect for the first time,
     to login with a token:
         http://localhost:8888/?token=9c503729c379fcb3c7a17087f05462c733c1733eb8b31d07
-``` 
+```
 
 Good Luck!
 
