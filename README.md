@@ -86,6 +86,11 @@ git clone https://github.com/almond-sh/almond.git
 cd jupyter-scala
 curl -L -o coursier https://git.io/coursier && chmod +x coursier
 SCALA_VERSION=2.12.7 ALMOND_VERSION=0.1.9
+coursier bootstrap \
+    -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
+    sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
+    -o almond
+./almond --install
 ```
 
 Now clone this repo and install the customization script.
@@ -96,11 +101,6 @@ git clone https://github.com/freechipsproject/chisel-bootcamp.git
 cd chisel-bootcamp
 mkdir -p ~/.jupyter/custom
 cp source/custom.js ~/.jupyter/custom/custom.js
-coursier bootstrap \
-    -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
-    sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
-    -o almond
-./almond --install
 ```
 
 And to start the bootcamp on your local machine:
