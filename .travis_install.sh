@@ -20,5 +20,5 @@ curl -L -o coursier https://git.io/coursier && chmod +x coursier
 
 # Copy custom css
 mkdir -p ~/.jupyter/custom
-# cp source/custom.js ~/.jupyter/custom/custom.js
+cp $TRAVIS_BUILD_DIR/source/custom.js $HOME/.jupyter/custom/custom.js
 
