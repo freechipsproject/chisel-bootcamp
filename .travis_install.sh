@@ -6,7 +6,7 @@ bash miniconda.sh -b -p $CONDA_HOME
 export PATH="$CONDA_HOME/bin":$PATH
 conda config --set always_yes yes --set changeps1 no
 conda update -q conda
-conda install jupyter typing
+conda install jupyter nbconvert typing
 
 # Almond (Scala kernel for Jupyter)
 git clone -b v0.1.9 https://github.com/almond-sh/almond.git
