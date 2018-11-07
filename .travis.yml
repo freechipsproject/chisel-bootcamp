@@ -1,3 +1,4 @@
+# chisel-bootcamp Travis config file
 language: scala
 jdk: oraclejdk8
 cache:
