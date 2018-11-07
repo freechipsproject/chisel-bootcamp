@@ -6,10 +6,11 @@ cache:
     - $HOME/.ivy2/cache
 env:
   global:
+    - CONDA_HOME: $HOME/miniconda
     - SCALA_VERSION: 2.12.7
     - ALMOND_VERSION: 0.1.11
 
 install:
   - bash .travis_install.sh
 script:
-  - python3 runtest.py
+  - $CONDA_HOME/bin/python3 runtest.py
