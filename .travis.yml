@@ -12,6 +12,6 @@ env:
 
 install:
   - bash .travis_install.sh
-  - export PATH=$CONDA_HOME/bin
+  - export PATH=$CONDA_HOME/bin:$PATH
 script:
   - cd $TRAVIS_BUILD_DIR && python3 runtest.py
