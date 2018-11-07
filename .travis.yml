@@ -6,7 +6,7 @@ cache:
     - $HOME/.ivy2/cache
 env:
   - SCALA_VERSION: 2.12.7
-  - ALMOND_VERSION: 0.1.9
+  - ALMOND_VERSION: 0.1.11
 
 install:
   - bash .travis_install.sh
