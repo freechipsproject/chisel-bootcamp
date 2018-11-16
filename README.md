@@ -246,5 +246,5 @@ Make sure that you have **Java 8** selected for running Jupyter (see the instruc
 - Adam Izraelevitz ([adamiz@berkeley.edu](mailto:azidar@berkeley.edu))
 - Richard Lin ([richard.lin@berkeley.edu](mailto:edwardw@berkeley.edu))
 - Chick Markley ([chick@berkeley.edu](mailto:chick@berkeley.edu))
-- Paul Rigge([rigge@berkeley.edu](mailto:rigge@berkeley.edu))
+- Paul Rigge ([rigge@berkeley.edu](mailto:rigge@berkeley.edu))
 - Edward Wang ([edwardw@berkeley.edu](mailto:edwardw@berkeley.edu))
