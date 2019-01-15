@@ -82,14 +82,15 @@ If pip3 isn't working out of the box (possibly because your Python3 version is o
 
 Then, clone this repo and run the installation script: https://github.com/almond-sh/almond.git
 ```
-git clone -b v0.1.9 https://github.com/almond-sh/almond.git
+git clone -b v0.2.1 https://github.com/almond-sh/almond.git
 cd almond
 curl -L -o coursier https://git.io/coursier && chmod +x coursier
-SCALA_VERSION=2.11.12 ALMOND_VERSION=0.1.9
-./coursier bootstrap \
-    -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
-    sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
-    -o almond
+SCALA_VERSION=2.12.8 ALMOND_VERSION=0.2.1
+./coursier bootstrap -r jitpack \
+  -i user -I user:sh.almond:scala-kernel-api_2.12.8:0.2.1 \
+ sh.almond:scala-kernel_2.12.8:0.2.1 \
+ --sources --default=true \
+ -o almond
 ./almond --install
 ```
 
@@ -116,7 +117,7 @@ Many different windows configurations may be encountered and some changes may be
 Please let us know of there are things out of date, or otherwise should be covered here.
 
 >There are several times where you may want to launch a Command (shell) window.
-I have discovered that launching the command window in Administrator Mode is helpful. 
+I have discovered that launching the command window in Administrator Mode is helpful.
 To do that from the bottom left Launcher, find or search for 'CMD' when selecting it from
 the menu, right click and choose, "Launch in Administrator Mode".
 Find more details on this [here](http://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator)
@@ -129,7 +130,7 @@ If you type `java` into a command prompt and it says command not found, you need
 [Java](https://java.com/en/download/help/windows_manual_download.xml).
 
 #### Install Jupyter
-Jupyter recommends using the Anaconda distribution, here is the 
+Jupyter recommends using the Anaconda distribution, here is the
 [Windows download](https://www.anaconda.com/download/#windows).
 
 Near the end of the Jupyter installation is a question about whether to add Jupyter to the PATH.
@@ -150,7 +151,7 @@ I copied it to my c:\Users\me\chisel-bootcamp.
 There may be better ways and more standard conventions on where to put this kind of thing.
 But the most important thing is that you need to know where it is.
 
-Install the customization script by moving `chisel-bootcamp/source/custom.js` to 
+Install the customization script by moving `chisel-bootcamp/source/custom.js` to
 `%HOMEDRIVE%%HOMEPATH%\.jupyter\custom\custom.js`.
 If you already have a custom.js file, append this script to it.
 
