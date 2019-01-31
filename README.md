@@ -19,6 +19,10 @@ It teaches you Scala along the way, and it frames the learning of Chisel on the 
 - Programming experience in a modern language, be it in Python, Java, C++, etc.
 - An earnest desire to learn something new
 
+## Getting Started
+
+Try it out [HERE](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)! No local installation required!
+
 ## Outline
 
 The bootcamp is divided into modules, which are further subdivided.
@@ -53,10 +57,6 @@ The benefits of Chisel are in how you use it, not in the language itself.
 If you decide to write instances instead of generators, you will see fewer advantages of Chisel over Verilog.
 But if you take the time to learn how to write generators, then the power of Chisel will become apparent and you will realize you can never go back to writing Verilog.
 Learning to write generators is difficult, but we hope this tutorial will pave the way for you to become a better hardware designer, programmer, and thinker!
-
-## Getting Started
-
-Try it out [HERE](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)! No local installation required!
 
 ## Local Setup Instructions
 
