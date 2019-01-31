@@ -54,9 +54,13 @@ If you decide to write instances instead of generators, you will see fewer advan
 But if you take the time to learn how to write generators, then the power of Chisel will become apparent and you will realize you can never go back to writing Verilog.
 Learning to write generators is difficult, but we hope this tutorial will pave the way for you to become a better hardware designer, programmer, and thinker!
 
-## Setup Instructions
+## Getting Started
 
-Run the instructions below for your particular situation.
+Try it out [HERE](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)! No local installation required!
+
+## Local Setup Instructions
+
+If you want to run the bootcamp locally, run the following instructions below for your particular situation.
 Note that we include a custom javascript file for Jupyter, so if you already have Jupyter installed, you still need to install the custom.js file.
 
 Note: Make sure you are using **Java 8** (NOT Java 9) and have the JDK8 installed. Coursier/jupyter-scala does not appear to be compatible with Java 9 yet as of January 2018.
