@@ -17,3 +17,7 @@ chmod +x coursier
 
 # Install required Jupyter/JupyterLab extensions
 jupyter labextension install @jupyterlab/plotly-extension
+
+# Install custom Javascript for solutions
+mkdir -p ~/.jupyter/custom
+cp source/custom.js ~/.jupyter/custom/custom.js

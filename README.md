@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/azidar/chisel-bootcamp/master)
+
 # Chisel Bootcamp
 
 Elevate the level of your hardware design from instances to generators!
