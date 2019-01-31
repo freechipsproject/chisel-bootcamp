@@ -1,5 +1,0 @@
-name: chisel-bootcamp
-channels:
-  - conda-forge
-dependencies:
-  - beakerx
