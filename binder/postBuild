@@ -1,0 +1,19 @@
+#!/bin/bash
+
+SCALA_VERSION=2.12.8 ALMOND_VERSION=0.2.2
+
+# Install coursier
+curl -L -o coursier https://git.io/coursier
+chmod +x coursier
+
+# Install almond
+./coursier bootstrap \
+    -r jitpack \
+    -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
+    sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
+    --sources --default=true \
+    -o almond
+./almond --install
+
+# Install required Jupyter/JupyterLab extensions
+jupyter labextension install @jupyterlab/plotly-extension
