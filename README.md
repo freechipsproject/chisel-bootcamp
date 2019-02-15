@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)
+
 # Chisel Bootcamp
 
 Elevate the level of your hardware design from instances to generators!
@@ -16,6 +18,10 @@ It teaches you Scala along the way, and it frames the learning of Chisel on the 
 - Familiarity with Verilog, VHDL, or at the very least, hardware design in general
 - Programming experience in a modern language, be it in Python, Java, C++, etc.
 - An earnest desire to learn something new
+
+## Getting Started
+
+Try it out [HERE](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)! No local installation required!
 
 ## Outline
 
@@ -52,9 +58,9 @@ If you decide to write instances instead of generators, you will see fewer advan
 But if you take the time to learn how to write generators, then the power of Chisel will become apparent and you will realize you can never go back to writing Verilog.
 Learning to write generators is difficult, but we hope this tutorial will pave the way for you to become a better hardware designer, programmer, and thinker!
 
-## Setup Instructions
+## Local Setup Instructions
 
-Run the instructions below for your particular situation.
+If you want to run the bootcamp locally, run the following instructions below for your particular situation.
 Note that we include a custom javascript file for Jupyter, so if you already have Jupyter installed, you still need to install the custom.js file.
 
 Note: Make sure you are using **Java 8** (NOT Java 9) and have the JDK8 installed. Coursier/jupyter-scala does not appear to be compatible with Java 9 yet as of January 2018.
@@ -246,5 +252,5 @@ Make sure that you have **Java 8** selected for running Jupyter (see the instruc
 - Adam Izraelevitz ([adamiz@berkeley.edu](mailto:azidar@berkeley.edu))
 - Richard Lin ([richard.lin@berkeley.edu](mailto:edwardw@berkeley.edu))
 - Chick Markley ([chick@berkeley.edu](mailto:chick@berkeley.edu))
-- Paul Rigge([rigge@berkeley.edu](mailto:rigge@berkeley.edu))
+- Paul Rigge ([rigge@berkeley.edu](mailto:rigge@berkeley.edu))
 - Edward Wang ([edwardw@berkeley.edu](mailto:edwardw@berkeley.edu))
