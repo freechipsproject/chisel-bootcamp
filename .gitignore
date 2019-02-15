@@ -6,5 +6,7 @@
 /*/*/.DS_Store
 *.anno
 *.fir
-*.v
 *.xml
+generated-src/
+verilator/
+*.riscv
