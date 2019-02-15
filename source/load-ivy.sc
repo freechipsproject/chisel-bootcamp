@@ -1,3 +1,5 @@
+interp.configureCompiler(x => x.settings.source.value = scala.tools.nsc.settings.ScalaVersion("2.11.12"))
+
 import $ivy.`edu.berkeley.cs::chisel3:3.1.0` 
 import $ivy.`edu.berkeley.cs::chisel-iotesters:1.2.0`
 import $ivy.`edu.berkeley.cs::dsptools:1.1.0`
