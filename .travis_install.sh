@@ -15,10 +15,10 @@ conda install jupyter nbconvert typing
 git clone -b v0.1.9 https://github.com/almond-sh/almond.git
 cd almond
 curl -L -o coursier https://git.io/coursier && chmod +x coursier
-./coursier bootstrap \
+./coursier bootstrap -r jitpack \
     -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
     sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
-    -o almond
+    --sources --default=true -o almond
 ./almond --install
 
 # Copy custom css

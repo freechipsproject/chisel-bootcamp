@@ -7,8 +7,8 @@ cache:
 env:
   global:
     - CONDA_HOME: $HOME/miniconda
-    - SCALA_VERSION: 2.12.7
-    - ALMOND_VERSION: 0.1.11
+    - SCALA_VERSION: 2.12.8
+    - ALMOND_VERSION: 0.2.1
 
 install:
   - bash .travis_install.sh
