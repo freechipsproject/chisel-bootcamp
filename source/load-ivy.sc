@@ -2,7 +2,7 @@ interp.configureCompiler(x => x.settings.source.value = scala.tools.nsc.settings
 
 // Uncomment and change to use proxy
 // System.setProperty("https.proxyHost", "proxy.example.com")
-// System.setProperty("https.proxyPort","3128")
+// System.setProperty("https.proxyPort", "3128")
 
 import $ivy.`edu.berkeley.cs::chisel3:3.1.0` 
 import $ivy.`edu.berkeley.cs::chisel-iotesters:1.2.0`
