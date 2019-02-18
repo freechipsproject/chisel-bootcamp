@@ -134,6 +134,9 @@ a browser window.
         http://localhost:8888/?token=9c503729c379fcb3c7a17087f05462c733c1733eb8b31d07
 ```
 
+##### Proxy usage
+If you require a proxy, try uncommenting and changing the relevant lines at the start of `source/load-ivy.sc`.
+
 Good Luck!
 
 ### Cadence AWS Setup
