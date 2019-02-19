@@ -6,6 +6,10 @@ interp.repositories() ++= Seq(
 
 interp.configureCompiler(x => x.settings.source.value = scala.tools.nsc.settings.ScalaVersion("2.11.12"))
 
+// Uncomment and change to use proxy
+// System.setProperty("https.proxyHost", "proxy.example.com")
+// System.setProperty("https.proxyPort", "3128")
+
 import $ivy.`edu.berkeley.cs::rocket-dsptools:1.2-020719-SNAPSHOT`
 
 // Convenience function to invoke Chisel and grab emitted Verilog.
