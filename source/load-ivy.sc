@@ -1,3 +1,9 @@
+interp.repositories() ++= Seq( 
+  coursier.maven.MavenRepository("https://oss.sonatype.org/content/repositories/snapshots")
+)
+
+@
+
 interp.configureCompiler(x => x.settings.source.value = scala.tools.nsc.settings.ScalaVersion("2.11.12"))
 
 // Uncomment and change to use proxy
@@ -9,6 +15,7 @@ import $ivy.`edu.berkeley.cs::chisel-iotesters:1.3-SNAPSHOT`
 import $ivy.`edu.berkeley.cs::chisel-testers2:0.1-SNAPSHOT`
 import $ivy.`edu.berkeley.cs::dsptools:1.1.0`
 import $ivy.`org.scalanlp::breeze:0.13.2`
+import $ivy.`edu.berkeley.cs::rocket-dsptools:1.2-020719-SNAPSHOT`
 
 // Convenience function to invoke Chisel and grab emitted Verilog.
 def getVerilog(dut: => chisel3.core.UserModule): String = {
