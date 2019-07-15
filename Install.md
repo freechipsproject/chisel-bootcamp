@@ -167,7 +167,6 @@ Future launches will be happy for a while.
 ```
 git clone /craft/tools/chisel/generator-bootcamp.git
 cd generator-bootcamp
-cp /craft/tools/jupyter/jupyter_support/rocket-dsp-utils-assembly-1.0.jar ../
 jupyter notebook
 ```
 
