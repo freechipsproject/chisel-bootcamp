@@ -36,7 +36,7 @@ This README serves as *Module 0*, an introduction and motivation to learning the
 It teaches you enough to start writing Chisel, but many more Scala concepts are taught along the way.
 Chisel is introduced in *Module 2*, starting with a hardware example and breaking it down.
 The rest of *Module 2* covers combinational and sequential logic, as well as software and hardware control flow.
-*Module 3* teachew how to write hardware generators in Chisel that take advantage of Scala's high-level programming language features.
+*Module 3* teaches you how to write hardware generators in Chisel that take advantage of Scala's high-level programming language features.
 By the end, you will be able to read and understand most of the [Chisel code base](https://github.com/freechipsproject/chisel3) and begin using [Rocket Chip](https://github.com/freechipsproject/rocket-chip).
 This tutorial *does not* yet cover SBT, build systems, backend flows for FPGA or ASIC processes, or analog circuits.
 
