@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/demo)
 
 **_For previous users of the bootcamp, we have upgraded from Scala 2.11 to Scala 2.12. If you are encountering errors, please follow the installation instructions to upgrade to 2.12._**
 
