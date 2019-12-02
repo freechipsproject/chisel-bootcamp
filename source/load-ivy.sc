@@ -17,7 +17,6 @@ import $ivy.`edu.berkeley.cs::dsptools:1.2.0`
 import $ivy.`org.scalanlp::breeze:0.13.2`
 import $ivy.`edu.berkeley.cs::rocket-dsptools:1.2.0`
 import $ivy.`edu.berkeley.cs::firrtl-diagrammer:1.1.0`
-import $ivy.`edu.berkeley.cs::riscv-mini:2.0`
 
 // Convenience function to invoke Chisel and grab emitted Verilog.
 def getVerilog(dut: => chisel3.core.UserModule): String = {
