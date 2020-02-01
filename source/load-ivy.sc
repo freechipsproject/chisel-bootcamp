@@ -1,5 +1,11 @@
-interp.repositories() ++= Seq( 
-  coursier.maven.MavenRepository("https://oss.sonatype.org/content/repositories/snapshots")
+// interp.repositories() ++= Seq( 
+//   coursier.maven.MavenRepository("https://oss.sonatype.org/content/repositories/snapshots")
+// )
+
+import coursierapi.MavenRepository
+
+interp.repositories.update(
+  interp.repositories() ::: List(MavenRepository.of("https://oss.sonatype.org/content/repositories/snapshots"))
 )
 
 @
