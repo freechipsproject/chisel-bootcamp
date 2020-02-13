@@ -1,4 +1,4 @@
-# APEX : Chisel Bootcamp
+# One Day : Chisel Bootcamp
 The goal of this bootcamp is to get the attendee up to speed with Scala
 and Chisel as quickly as possible. The format should be casual with a lot
 of questions and immediate feedback. 
