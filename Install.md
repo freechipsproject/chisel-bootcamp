@@ -42,6 +42,8 @@ pip3 install jupyterlab
 
 #### Jupyter Backend for Scala
 
+If you experience errors or issues with this section, try running `rm -rf ~/.local/share/jupyter/kernels/scala/` first.
+
 Next, download coursier and use it to install almond (see [here](https://almond.sh/docs/quick-start-install) for the source for these instructions):
 ```
 curl -L -o coursier https://git.io/coursier-cli && chmod +x coursier
