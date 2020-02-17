@@ -8,3 +8,7 @@
 *.fir
 *.v
 *.xml
+
+# Jupyter-scala scripts
+coursier
+almond
