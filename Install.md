@@ -80,8 +80,8 @@ If you installed Jupyter Lab, run `jupyter-lab` instead.
 ### Local Installation - Windows
 
 These notes describe, in general, the way to install the Generator Bootcamp under Windows 10.
-Many different windows configurations may be encountered and some changes may be required.
-Please let us know of there are things out of date, or otherwise should be covered here.
+Many different Windows configurations may be encountered and some changes may be required.
+Please let us know of there are things out of date, or should otherwise be covered here.
 
 >There are several times where you may want to launch a Command (shell) window.
 I have discovered that launching the command window in Administrator Mode is helpful.
@@ -89,12 +89,12 @@ To do that from the bottom left Launcher, find or search for 'CMD' when selectin
 the menu, right click and choose, "Launch in Administrator Mode".
 Find more details on this [here](http://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator)
 and other places.
-It is also best to relauch
-command windows between steps in the process so that newly installed software will be recognized.
+It is also best to relauch any command windows between steps in the process (e.g. after installing Java)
+so that any newly installed software will be recognized.
 
-#### Be sure java is installed (ideally java 8).
+#### Be sure Java is installed (ideally Java 8).
 If you type `java` into a command prompt and it says command not found, you need to install
-[Java](https://java.com/en/download/help/windows_manual_download.xml).
+[Java](https://adoptopenjdk.net/installation.html).
 
 #### Install Jupyter
 Jupyter recommends using the Anaconda distribution, here is the
@@ -103,14 +103,17 @@ Jupyter recommends using the Anaconda distribution, here is the
 Near the end of the Jupyter installation is a question about whether to add Jupyter to the PATH.
 Windows does not recommend this, but I do.  It will make it easier to run using the command prompt.
 
+If you did not elect to add Jupyter to the PATH, start a prompt using the
+"Anaconda Prompt (Anaconda3)" shortcut from the Start Menu.
+
 #### Install Scala components.
 
-The simplest way seens to be to Download Coursier from [here](https://git.io/vgvpD)
+The simplest way seems to be to download Coursier from [here](https://github.com/coursier/coursier/releases/download/v2.0.0-RC6-24/coursier).
 
-Go to download folder, where "coursier" (file) is
+Go to download folder, where `coursier` (file) is
 
 ```
-java -noverify -jar coursier launch -r jitpack -i user -I user:sh.almond:scala-kernel-api_2.12.8:0.2.1 sh.almond:scala-kernel_2.12.8:0.2.1 --sources --default=true -- --install
+java -noverify -jar coursier launch --fork almond:0.10.6 --scala 2.12.8 -- --install
 ```
 
 #### Install the chisel-bootcamp repo.
@@ -143,7 +146,7 @@ Good Luck!
 
 ### Cadence AWS Setup
 
-If you don't know or don't have access to Cadence AWS, skip this section.
+If you don't know what is Cadence AWS, or don't have access to Cadence AWS, skip this section.
 
 Navigate to your working directory, which is probably your home directory.
 
