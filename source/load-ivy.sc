@@ -10,13 +10,15 @@ interp.configureCompiler(x => x.settings.source.value = scala.tools.nsc.settings
 // System.setProperty("https.proxyHost", "proxy.example.com")
 // System.setProperty("https.proxyPort", "3128")
 
-import $ivy.`edu.berkeley.cs::chisel3:3.2.0` 
-import $ivy.`edu.berkeley.cs::chisel-iotesters:1.3.0`
-import $ivy.`edu.berkeley.cs::chisel-testers2:0.1.0`
-import $ivy.`edu.berkeley.cs::dsptools:1.2.0`
+import $ivy.`edu.berkeley.cs::chisel3:3.4.0` 
+import $ivy.`edu.berkeley.cs::chisel-iotesters:1.5.0`
+import $ivy.`edu.berkeley.cs::chiseltest:0.3.0`
+import $ivy.`edu.berkeley.cs::dsptools:1.4.0`
 import $ivy.`org.scalanlp::breeze:0.13.2`
 import $ivy.`edu.berkeley.cs::rocket-dsptools:1.2.0`
-import $ivy.`edu.berkeley.cs::firrtl-diagrammer:1.1.0`
+import $ivy.`edu.berkeley.cs::firrtl-diagrammer:1.3.0`
+
+import $ivy.`org.scalatest::scalatest:3.2.2`
 
 // Convenience function to invoke Chisel and grab emitted Verilog.
 def getVerilog(dut: => chisel3.core.UserModule): String = {
