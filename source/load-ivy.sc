@@ -160,10 +160,10 @@ def generateVisualizations(gen: () => chisel3.RawModule): (String, String) = {
     s"cp build/${readableTop}_hierarchy.dot.svg build/${uniqueTop}_hierarchy.dot.svg"!!
     
     val moduleView = targetDir + "/" + uniqueTop + ".dot.svg"
-    val x = """<a name="top"></a><img src=" """ + moduleView + """" alt="Module View";" />"""
+    val x = """<a name="top"></a><img src="""" + moduleView + """" alt="Module View";" />"""
     
     val instanceView = targetDir + "/" + uniqueTop + "_hierarchy.dot.svg"
-    val y = """<a name="top"></a><img src=" """ + instanceView + """" alt="Hierarchy View" style="width:480px;" />"""
+    val y = """<a name="top"></a><img src="""" + instanceView + """" alt="Hierarchy View" style="width:480px;" />"""
     (x, y)
 
 }
