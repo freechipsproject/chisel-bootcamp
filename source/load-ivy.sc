@@ -101,9 +101,9 @@ def generateVisualizations(gen: () => chisel3.RawModule): (String, String) = {
 
     import almond.interpreter.api.DisplayData
     import almond.api.helpers.Display
+    import ammonite.ops.{cp, pwd, RelPath}
 
     import chisel3._
-    import chisel3.experimental._
     import firrtl.ir.Module
     import sys.process._
     
@@ -155,10 +155,9 @@ def generateVisualizations(gen: () => chisel3.RawModule): (String, String) = {
       x.execute(circuitState)
     }
 
-    s"cp build/${readableTop}.dot.svg build/${uniqueTop}.dot.svg"!!
+    cp(pwd/'build/RelPath(s"${readableTop}.dot.svg"), pwd/'build/RelPath(s"${uniqueTop}.dot.svg"))
+    cp(pwd/'build/RelPath(s"${readableTop}_hierarchy.dot.svg"), pwd/'build/RelPath(s"${uniqueTop}_hierarchy.dot.svg"))
 
-    s"cp build/${readableTop}_hierarchy.dot.svg build/${uniqueTop}_hierarchy.dot.svg"!!
-    
     val moduleView = targetDir + "/" + uniqueTop + ".dot.svg"
     val x = """<a name="top"></a><img src=" """ + moduleView + """" alt="Module View";" />"""
     
