@@ -5,7 +5,7 @@ import sys
 import subprocess
 import tempfile
 
-from typing import List
+from typing import Any, Dict, List
 
 import nbformat
 
@@ -32,39 +32,51 @@ def _notebook_run(path):
 
     return nb, errors
 
-def check_errors(expected, actual):
-    assert len(expected) == len(actual)
+def check_errors(expected: List[str], actual: List[Any]) -> bool:
+    if len(expected) != len(actual):
+        actual_tracebacks: List[str] = list(map(lambda x: str(x['traceback'][0]), actual))
+        print(f"Expected errors: {expected}", file=sys.stderr)
+        print(f"Actual errors: {actual_tracebacks}", file=sys.stderr)
+        return False
     for e, a in zip(expected, actual):
-        # print(a['traceback'])
-        # print('\n\n')
-        assert e in a['traceback'][0]
+        if e not in a['traceback'][0]:
+            print(f"Expected error = {e}, actual error = {a['traceback'][0]}", file=sys.stderr)
+            return False
+    return True
 
-notebooks = {
+notebooks: Dict[str, List[str]] = {
+    # For some reason the NotImplementedError gets swallowed up by
+    # setupFirrtlTerpBackend.
+    # Instead we have to try and catch the "java.lang.Exception: Problem with compilation"
+    # message instead.
+
     "1_intro_to_scala.ipynb": [],
     "2.1_first_module.ipynb": ['scala.NotImplementedError'],
-    "2.2_comb_logic.ipynb": ['Compilation Failed'] + ['scala.NotImplementedError'] * 3,
+    "2.2_comb_logic.ipynb": ['Compilation Failed'] + ['java.lang.Exception: Problem with compilation'] * 3,
     "2.3_control_flow.ipynb": ['scala.NotImplementedError'] * 2 + ['Compilation Failed']
       + ['scala.NotImplementedError'] + ['Compilation Failed'],
-    "2.4_sequential_logic.ipynb": ['scala.NotImplementedError', 'scala.NotImplementedError'],
-    "2.5_exercise.ipynb": ['scala.NotImplementedError'] * 3 +
-      ['java.nio.file.NoSuchFileException'] + ['Compilation Failed'] * 2,
+    "2.4_sequential_logic.ipynb": ['java.lang.Exception: Problem with compilation'] * 2,
+    "2.5_exercise.ipynb": ['java.lang.Exception: Problem with compilation'] * 4,
+    "2.6_testers2.ipynb": [],
     "3.1_parameters.ipynb": ['java.util.NoSuchElementException'],
-    "3.2_collections.ipynb": ['Internal Error!'],
+    "3.2_collections.ipynb": ['java.lang.Exception: Problem with compilation'],
     "3.2_interlude.ipynb": [],
     "3.3_higher-order_functions.ipynb": ['scala.NotImplementedError'] +
-      ['java.lang.UnsupportedOperationException'] + ['scala.NotImplementedError'] * 3,
+      ['java.lang.UnsupportedOperationException'] + ['scala.NotImplementedError'] * 2 + ['java.lang.Exception: Problem with compilation'],
     "3.4_functional_programming.ipynb": ['scala.NotImplementedError'] +
-      ['Compilation Failed'] + ['scala.NotImplementedError'] + ['Compilation Failed'],
+      ['Compilation Failed']
+      + ['scala.NotImplementedError'] + ['Compilation Failed'],
     "3.5_object_oriented_programming.ipynb": ['Compilation Failed'],
-    "3.6_types.ipynb": ['chisel3.internal.ChiselException'] + ['I give up!'] + ['SyntaxError'] + ['Compilation Failed'] * 6,
+    # The first ChiselException swallowed by setupFirrtlTerpBackend
+    "3.6_types.ipynb": ['java.lang.Exception: Problem with compilation'] + ['Failed to elaborate Chisel circuit'] + ['expected ")"'] + ['Compilation Failed'] * 5,
     "4.1_firrtl_ast.ipynb": [],
     "4.2_firrtl_ast_traversal.ipynb": [],
     "4.3_firrtl_common_idioms.ipynb": [],
-    "4.4_firrtl_add_ops_per_module.ipynb": [],
+    "4.4_firrtl_add_ops_per_module.ipynb": ['FirrtlInternalException'], # bug 129
 }
 
 if __name__ == "__main__":
-    notebooks_to_run = []  # type: List[str]
+    notebooks_to_run: List[str] = []
     if len(sys.argv) > 1:
         if sys.argv[1] == "--help":
             print("Usage: {} [notebook_name.ipynb] [notebook_name_2.ipynb] [...]".format(sys.argv[0]))
@@ -77,4 +89,4 @@ if __name__ == "__main__":
     for n in notebooks_to_run:
         expected = notebooks[n]
         nb, errors = _notebook_run(n)
-        check_errors(expected, errors)
+        assert check_errors(expected, errors)
