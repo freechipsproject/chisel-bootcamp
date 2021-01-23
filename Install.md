@@ -10,6 +10,28 @@ If you do have multiple version of Java, make sure to select Java 8 (1.8) before
 * On Windows: https://gist.github.com/rwunsch/d157d5fe09e9f7cdc858cec58c8462d6
 * On Mac OS: https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-os-x
 
+### Local Installation using Docker - Linux/Mac/Windows
+
+Make sure you have Docker [installed](https://docs.docker.com/get-docker/) on your system.
+
+Run the following command:
+
+```
+docker run -it --rm -p 8888:8888 sterin/chisel-bootcamp
+```
+
+This will download a Dokcer image for the bootcamp and run it. The output will end in the following message:
+
+```
+    To access the notebook, open this file in a browser:
+        file:///home/bootcamp/.local/share/jupyter/runtime/nbserver-6-open.html
+    Or copy and paste one of these URLs:
+        http://79b8df8411f2:8888/?token=LONG_RANDOM_TOKEN
+     or http://127.0.0.1:8888/?token=LONG_RANDOM_TOKEN
+```
+
+Copy the last link, the one starting with https://127.0.0.1:8888 to your browser and follow the Bootcamp.
+
 ### Local Installation - Mac/Linux
 
 This bootcamp uses Jupyter notebooks.

@@ -1,0 +1,48 @@
+FROM ubuntu:20.04
+
+RUN \
+    apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y \
+        ca-certificates-java \
+        curl \
+        git \
+        graphviz \
+        openjdk-8-jdk-headless \
+        openjdk-8-jre-headless \
+        python3-pip \
+        && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install --upgrade pip
+RUN pip3 install jupyter
+
+RUN useradd -ms /bin/bash bootcamp
+
+USER bootcamp
+WORKDIR /home/bootcamp
+
+ENV SCALA_VERSION=2.12.10
+ENV ALMOND_VERSION=0.9.1
+
+RUN \
+    curl -L -o coursier https://git.io/coursier-cli && \
+    chmod +x coursier && \
+    ./coursier \
+        bootstrap \
+        -r jitpack \
+        -i user \
+        -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
+        sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
+        --sources \
+        --default=true \
+        -o almond && \
+    ./almond --install && \
+    rm -f coursier almond
+
+ADD . /home/bootcamp/
+
+RUN mkdir -p ~/.jupyter/custom
+RUN cp source/custom.js ~/.jupyter/custom/custom.js
+
+EXPOSE 8888
+ENTRYPOINT jupyter notebook --no-browser --ip 0.0.0.0 --port 8888
