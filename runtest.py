@@ -65,7 +65,7 @@ notebooks: Dict[str, List[str]] = {
     # This is the list of pages to try and rum along with each pages expected errors.
 
     "1_intro_to_scala.ipynb": [],
-    "2.1_first_module.ipynb": [],
+    "2.1_first_module.ipynb": ["chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation"],
     "2.2_comb_logic.ipynb": ['Compilation Failed'] +
                             ['chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation'] +
                             ['chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation'] +
