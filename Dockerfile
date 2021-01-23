@@ -5,9 +5,7 @@ RUN \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
         ca-certificates-java \
         curl \
-        git \
         graphviz \
-        openjdk-8-jdk-headless \
         openjdk-8-jre-headless \
         python3-pip \
         && \
