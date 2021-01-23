@@ -44,5 +44,8 @@ ADD . /home/bootcamp/
 RUN mkdir -p ~/.jupyter/custom
 RUN cp source/custom.js ~/.jupyter/custom/custom.js
 
+# Execute a notebook to ensure Chisel is downloaded into the image for offline work
+RUN jupyter nbconvert --to html --output=/tmp/ --execute 0_demo.ipynb
+
 EXPOSE 8888
 ENTRYPOINT jupyter notebook --no-browser --ip 0.0.0.0 --port 8888
