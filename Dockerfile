@@ -38,7 +38,8 @@ RUN \
     ./almond --install && \
     rm -f coursier almond
 
-ADD . /home/bootcamp/
+ADD --chown=bootcamp:bootcamp . /chisel-bootcamp/
+WORKDIR /chisel-bootcamp
 
 RUN mkdir -p ~/.jupyter/custom
 RUN cp source/custom.js ~/.jupyter/custom/custom.js
