@@ -7,12 +7,13 @@ RUN \
         curl \
         graphviz \
         openjdk-8-jre-headless \
-        python3-pip \
+        python3-distutils \
         && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install --upgrade pip
-RUN pip3 install jupyter
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+RUN python3 get-pip.py
+RUN pip3 install notebook
 
 RUN useradd -ms /bin/bash bootcamp
 
