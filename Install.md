@@ -1,4 +1,13 @@
-## Local Setup Instructions
+# Local Setup Instructions
+
+## Using Docker
+We publish images of the chisel-bootcamp to Docker Hub.
+To use it, run
+```
+docker run -e JUPYTER_ENABLE_LAB=yes -p 8888:8888 ucbbar:chisel-bootcamp
+```
+
+## Local Installation
 
 If you want to run the bootcamp locally, run the following instructions below for your particular situation.
 Note that we include a custom javascript file for Jupyter, so if you already have Jupyter installed, you still need to install the custom.js file.
