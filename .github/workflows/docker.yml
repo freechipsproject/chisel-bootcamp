@@ -6,7 +6,7 @@ on:
 
 jobs:
   docker:
-    name: Build Docker Image and Publish on Push
+    name: Build Docker Image and Publish (only on push)
     runs-on: ubuntu-latest
     steps:
 
@@ -24,10 +24,8 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
-      - name: Push to Docker Hub
+      - name: Build (always) and Publish (only on push)
         uses: docker/build-push-action@v2
         with:
           tags: ucbbar/chisel-bootcamp:latest
-          # TODO swap these before merge
-          push: true
-          #push: ${{ github.event_name == 'push' }}
+          push: ${{ github.event_name == 'push' }}
