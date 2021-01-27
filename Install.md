@@ -17,7 +17,7 @@ Make sure you have Docker [installed](https://docs.docker.com/get-docker/) on yo
 Run the following command:
 
 ```
-docker run -it --rm -p 8888:8888 sterin/chisel-bootcamp
+docker run -it --rm -p 8888:8888 ucb-bar/chisel-bootcamp
 ```
 
 This will download a Dokcer image for the bootcamp and run it. The output will end in the following message:
