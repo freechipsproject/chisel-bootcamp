@@ -80,6 +80,10 @@ SCALA_VERSION=2.12.10 ALMOND_VERSION=0.9.1
 
 You can delete `coursier` and `almond` files if you so desire.
 
+#### Visualizations
+
+[Graphviz](https://graphviz.org/download/) is required to show visualizations of Chisel modules, such as in the demo page. However, visualizations are optional as the other Chisel and Scala features will work without it.
+
 #### Install bootcamp
 Now clone the bootcamp repo and install the customization script.
 If you already have one, append this script to it.
@@ -137,6 +141,10 @@ Go to download folder, where `coursier` (file) is
 ```
 java -noverify -jar coursier launch --fork almond:0.10.6 --scala 2.12.8 -- --install
 ```
+
+#### Visualizations
+
+[Graphviz](https://graphviz.org/download/) is required to show visualizations of Chisel modules, such as in the demo page. However, visualizations are optional as the other Chisel and Scala features will work without it.
 
 #### Install the chisel-bootcamp repo.
 Download the [chisel-bootcamp](https://github.com/freechipsproject/chisel-bootcamp) as a zip file (or use a Windows git client)
