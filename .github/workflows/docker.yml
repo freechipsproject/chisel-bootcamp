@@ -1,32 +1,32 @@
-name: Publish Docker image
+name: Publish Docker image to DockerHub
 on:
   push:
-    branches: [ master ]
+    branches: [ dev ]
   pull_request:
+    branches: [ dev ]
 
+# https://docs.docker.com/build/ci/github-actions/multi-platform/
 jobs:
   docker:
     name: Build Docker Image and Publish (only on push)
     runs-on: ubuntu-latest
     steps:
-
+      
       - name: Check out the repo
-        uses: actions/checkout@v2
-
-      # Steps required by docker/build-push-action@v2
+        uses: actions/checkout@v4
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-      - name: Login to DockerHub
-        uses: docker/login-action@v1
-        if: github.event_name == 'push'
+        uses: docker/setup-buildx-action@v3
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
-
-      - name: Build (always) and Publish (only on push)
-        uses: docker/build-push-action@v2
+      - name: Build and push
+        uses: docker/build-push-action@v5
         with:
-          tags: ucbbar/chisel-bootcamp:latest
-          push: ${{ github.event_name == 'push' }}
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: sysprog21/chisel-bootcamp:latest
