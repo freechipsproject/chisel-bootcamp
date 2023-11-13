@@ -16,7 +16,7 @@ RUN \
 
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN python3 get-pip.py
-RUN pip3 install notebook
+RUN pip3 install jupyter jupyterlab
 
 RUN useradd -ms /bin/bash bootcamp
 
@@ -69,4 +69,4 @@ USER bootcamp
 WORKDIR /chisel-bootcamp
 
 EXPOSE 8888
-CMD jupyter notebook --no-browser --ip 0.0.0.0 --port 8888
+CMD jupyter lab --no-browser --ip 0.0.0.0 --port 8888
