@@ -1,3 +1,5 @@
+> :warning: Some features of the Jupyter Binder project have bit-rotted. Whilst the teachings are still valid and the majority of the exercises still work, you will encounter errors.
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)
 
 **_For previous users of the bootcamp, we have upgraded from Scala 2.11 to Scala 2.12. If you are encountering errors, please follow the installation instructions to upgrade to 2.12._**
