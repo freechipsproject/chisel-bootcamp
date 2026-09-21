@@ -20,7 +20,7 @@ Run the following command:
 docker run -it --rm -p 8888:8888 ucbbar/chisel-bootcamp
 ```
 
-This will download a Dokcer image for the bootcamp and run it. The output will end in the following message:
+This will download a Docker image for the bootcamp and run it. The output will end in the following message:
 
 ```
     To access the notebook, open this file in a browser:
