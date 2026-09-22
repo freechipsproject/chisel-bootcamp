@@ -30,3 +30,4 @@ jobs:
         with:
           tags: ucbbar/chisel-bootcamp:latest
           push: ${{ github.event_name == 'push' }}
+          platforms: linux/amd64,linux/arm64
